@@ -1,0 +1,108 @@
+.header{
+    background-image: url(../images/header\ bg.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.header__top{
+    display: flex;
+    align-items: center;
+    padding: 22px 0;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 500;
+}
+.header__top-text{
+    font-size: 16px;
+    font-weight: 700;
+    margin-right: 77px;
+    width: 146px;
+    text-transform: uppercase;
+}
+.place__box{
+    gap: 13px;
+    margin-right: 42px;
+}
+.place__text{
+    width: 193px;
+}
+.time__box{
+    gap: 16px;
+    margin-right: 44px;
+}
+.time__text{
+    width: 148px;
+}
+.phone__box{
+    gap: 13px;
+    margin-right: 44px;
+}
+.number__box{
+    display: flex;
+    flex-direction: column;
+}
+.mail__box{
+    gap: 11px;
+    margin-right: 78px;
+}
+.social__list{
+    display: flex;
+    gap: 5px;
+}
+.devider{
+    width: 100%;
+    height: 1px;
+    background-color: #fff;
+}
+.header__bottom{
+    padding: 20px 0 240px;
+}
+.header__bottom-top{
+    display: flex;
+    gap: 75px;
+    align-items: center;
+}
+.menu__list{
+    display: flex;
+    gap: 26px;
+}
+.menu__link{
+    font-size: 14px;
+    font-weight: 500;
+    color: #fff;
+}
+.order__btn{
+    gap: 20px;
+    border-radius: 25px;
+    background: #73C1F2;
+    padding: 16px 57px 17px 27px;
+}
+.header__bottom-title{
+    font-size: 65px;
+    font-weight: 700;
+    line-height: 75px;
+    width: 591px;
+    margin: 81px auto 0;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+}
+.btn__box{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 24px;
+    gap: 22px;
+}
+.catalog__btn,
+.consultation__btn{
+    border-radius: 25px;
+    background: #73C1F2;
+}
+.catalog__btn{
+    gap: 20px;
+    padding: 16px 36px 17px 27px;
+}
+.consultation__btn{
+    gap: 17px;
+    padding: 16px 73px 17px 27px;
+}
