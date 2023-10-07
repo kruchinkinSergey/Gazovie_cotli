@@ -93,19 +93,6 @@
     margin-top: 24px;
     gap: 22px;
 }
-.catalog__btn,
-.consultation__btn{
-    border-radius: 25px;
-    background: #73C1F2;
-}
-.catalog__btn{
-    gap: 20px;
-    padding: 16px 36px 17px 27px;
-}
-.consultation__btn{
-    gap: 17px;
-    padding: 16px 73px 17px 27px;
-}
 .main{
     position: relative;
 }
@@ -121,7 +108,7 @@
     left: 50%;
     transform: translateX(-50%);
 }
-.overlay{
+.offer__overlay{
     background: linear-gradient(268deg, rgba(115, 193, 242, 0.80) 0.71%, rgba(60, 156, 217, 0.80) 97.31%);
     width: 100%;
     height: 100%;
@@ -166,4 +153,197 @@
 .taimer__text{
     font-size: 10px;
     font-weight: 300;
+}
+.cotli{
+    padding: 396px 0 77px;
+}
+.cotli__title {
+    text-align: center;
+    margin-bottom: 46px;
+}
+.logo__list{
+    display: flex;
+    align-items: center;
+    margin-bottom: 77px;
+}
+.logo__item{
+    border-radius: 20px;
+    border: 4px solid #73C1F2;
+}
+.logo__item--thermex{
+    padding: 97px 45px;
+    margin-right: 77px;
+}
+.logo__item--mizudo{
+    padding: 63px 45px;
+    margin-right: 79px;
+}
+.logo__item--havein{
+    padding: 112px 45px;
+    margin-right: 73px;
+}
+.logo__item--baxi{
+    padding: 97px 45px;
+}
+.products__items{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.products__item{
+    display: flex;
+    border-radius: 30px;
+    border: 1px solid #606060;
+}
+.products__item-img{
+    margin-right: 36px;
+}
+.products__item-content{
+    display: flex;
+    flex-direction: column;
+}
+.products__item-title{
+    width: 280px;
+    padding: 20px 0 19px;
+}
+.productsi__item-text{
+    margin: 0 9px 24px 0;
+}
+.products__price{
+    display: flex;
+    gap: 7px;
+    align-items: center;
+}
+.products__contacts{
+    padding: 24px 25px 19px 25px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    border-left: 1px solid #606060;
+}
+.products__contacts-box{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+.product__user{
+    margin-right: 21px;
+}
+.product__medal{
+    margin-right: 26px;
+}
+.products__score{
+    display: flex;
+    align-items: center;
+    gap: 6px
+}
+.product__score{
+    color: #73C1F2;
+    font-weight: 500;
+    line-height: normal;
+}
+.stars__box{
+    display: flex;
+    gap: 1.75px;
+}
+.products__contacts-text{
+    margin-bottom: 9px;
+    font-size: 12px;
+}
+.products__contacts .consultation__btn{
+    margin-bottom: 5px;
+}
+.products__contacts .buy__btn{
+    margin-bottom: 16px;
+}
+.products__item--Mizudo .productsi__item-text{
+    margin-bottom: 44px;
+}
+.products__item--NAVIEN .productsi__item-text{
+    margin-bottom: 60px;
+}
+.boilery{
+    margin-bottom: 54px;
+}
+.boilery__title {
+    text-align: center;
+    margin-bottom: 46px;
+}
+.logo__item--hajdu{
+    padding: 109px 30px;
+    margin-right: 89px;
+}
+.logo__item--Royal_Thermo{
+    padding: 45px 57px;
+}
+.boilery .logo__list{
+    justify-content: center;
+}
+.products__item--hajdu .products__item-title{
+    width: 161px;
+}
+.products__item--hajdu .productsi__item-text{
+    margin-bottom: 60px;
+}
+.products__item--Royal_Thermo .products__item-title{
+    width: 242px;
+}
+.consultation{
+    max-width: 1073px;;
+    margin: 0 auto;
+    padding: 95px 0 163px 88px;
+    border-radius: 60px;
+    background: url(../images/consultation-bg.png);
+    margin-bottom: 54px;
+}
+.consultation__title{
+    color: #FFF;
+    width: 377px;
+    margin-bottom: 18px;
+}
+.consultation .consultation__btn{
+    display: inline-flex;
+}
+.equipment{
+    background-image: url(../images/equipment__overlay.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.equipment__overlay{
+    background: linear-gradient(266deg, rgba(169, 198, 216, 0.90) 1.59%, rgba(60, 156, 217, 0.90) 97.25%);
+    width: 100%;
+    height: 100%; 
+    padding: 46px 0 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 69px;
+}
+.equipment__title{
+    width: 827px;
+    color: #FFF;
+    text-align: center;
+}
+.equipment__items{
+    display: flex;
+    gap: 86px;
+    align-items: center;
+}
+.equipment__items + .equipment__items{
+    align-items: baseline;
+}
+.equipment__item{
+    text-align: center;
+}
+.equipment__img{
+    border-radius: 20px;
+    border: 3px solid #FFF;
+    width: 240px;
+    height: 240px;
+    margin-bottom: 11px;
+}
+.equipment__text{
+    width: 100%;
+    color: #FFF;
 }
