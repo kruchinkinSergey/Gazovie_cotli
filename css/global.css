@@ -39,3 +39,26 @@ a{
     line-height: 44px;
     font-weight: 800;
 }
+.catalog__btn,
+.consultation__btn,
+.buy__btn,
+.order__btn{
+    border-radius: 25px;
+    background: #73C1F2;
+}
+.catalog__btn{
+    gap: 20px;
+    padding: 16px 36px 17px 27px;
+}
+.consultation__btn{
+    gap: 17px;
+    padding: 16px 73px 17px 27px;
+}
+.buy__btn{
+    padding: 16px 71px 17px 27px;
+    gap: 20px;
+}
+.order__btn{
+    gap: 20px;
+    padding: 16px 57px 17px 27px;
+}
