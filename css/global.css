@@ -32,6 +32,7 @@ a{
 }
 .btn{
     border: none;
+    cursor: pointer;
 }
 .title{
     text-transform: uppercase;
@@ -45,6 +46,20 @@ a{
 .order__btn{
     border-radius: 25px;
     background: #73C1F2;
+}
+.catalog__btn:hover,
+.consultation__btn:hover,
+.buy__btn:hover,
+.order__btn:hover{
+    border-radius: 25px;
+    background: #0487D9;
+}
+.catalog__btn:active,
+.consultation__btn:active,
+.buy__btn:active,
+.order__btn:active{
+    border-radius: 25px;
+    background: #0487D9;
 }
 .catalog__btn{
     gap: 20px;

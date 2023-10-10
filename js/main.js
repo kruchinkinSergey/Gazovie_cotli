@@ -1,10 +1,15 @@
 let time = 1055514;
 
-const daysEl = document.getElementById('days');
-const hoursEl = document.getElementById('hours');
-const minutesEl = document.getElementById('minutes');
-const secondsEl = document.getElementById('seconds');
+const daysEl = document.getElementById('days'),
+  hoursEl = document.getElementById('hours'),
+  minutesEl = document.getElementById('minutes'),
+  secondsEl = document.getElementById('seconds'),
+  orderBtn = document.querySelectorAll('.order__btn'),
+  applicationContent = document.getElementsByClassName('application__content'),
+  application = document.querySelector('.application'),
+  closeBtn = document.querySelector('.close__btn');
 
+console.log(application)
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
@@ -34,4 +39,17 @@ function updateCountdown() {
     secondsEl.innerHTML = `${seconds}`;
 
     time > 0 ? time--: time = 0;
-}
+};
+
+
+orderBtn.forEach((btn) => {
+    btn.addEventListener('click', ()=> {
+      applicationContent[0].classList.add('show'),
+      application.classList.add('application__overlay');
+    });
+});
+
+closeBtn.addEventListener('click', ()=>{
+    applicationContent[0].classList.remove('show'),
+    application.classList.remove('application__overlay');
+});
