@@ -43,21 +43,24 @@ a{
 .catalog__btn,
 .consultation__btn,
 .buy__btn,
-.order__btn{
+.order__btn,
+.order__btn--400{
     border-radius: 25px;
     background: #73C1F2;
 }
 .catalog__btn:hover,
 .consultation__btn:hover,
 .buy__btn:hover,
-.order__btn:hover{
+.order__btn:hover,
+.order__btn--400:hover{
     border-radius: 25px;
     background: #0487D9;
 }
 .catalog__btn:active,
 .consultation__btn:active,
 .buy__btn:active,
-.order__btn:active{
+.order__btn:active,
+.order__btn--400:hover{
     border-radius: 25px;
     background: #0487D9;
 }
@@ -71,9 +74,10 @@ a{
 }
 .buy__btn{
     padding: 16px 71px 17px 27px;
-    gap: 20px;
+    gap: 19px;
 }
-.order__btn{
+.order__btn,
+.order__btn--400{
     gap: 20px;
     padding: 16px 57px 17px 27px;
 }

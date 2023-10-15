@@ -76,11 +76,8 @@
     font-weight: 500;
     color: #fff;
 }
-.order__btn{
-    gap: 20px;
-    border-radius: 25px;
-    background: #73C1F2;
-    padding: 16px 57px 17px 27px;
+#button-400{
+    display: none;
 }
 .header__bottom-title{
     font-size: 65px;
@@ -135,9 +132,6 @@
 }
 .offer__title:first-child{
     width: 461px;
-}
-#button-400{
-    display: none;
 }
 .offer .order__btn{
     background-color: #52575A;
@@ -407,6 +401,7 @@
     padding: 95px 0 163px 88px;
     border-radius: 60px;
     background: url(../images/consultation-bg.png);
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: flex-start;

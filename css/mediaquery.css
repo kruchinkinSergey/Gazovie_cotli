@@ -85,11 +85,17 @@
         text-align: center;
         margin: 0 auto 30px;
     }
-    .header__bottom .order__btn,
+    #button-1280{
+        display: none;
+    }
+    #button-400{
+        display: flex;
+    }
+    .header__bottom .order__btn--400,
     .header__bottom .catalog__btn{
         margin: 0 auto;
     }
-    .header__bottom .order__btn{
+    .header__bottom .order__btn--400{
         margin-bottom: 18px;
     }
     .offer{
@@ -109,18 +115,9 @@
         width: 183px;
         line-height: 39px;
     }
-    #button-1280{
-        display: none;
-    }
-    #button-400{
-        display: flex;
-    }
-    .order__btn--400{
+    .offer .order__btn--400{
         background-color: #52575A;
         border: 1px solid #fff;
-        gap: 20px;
-        padding: 16px 57px 17px 27px;
-        border-radius: 25px;
     }
     .cotli{
         padding: 590px 0 40px;
