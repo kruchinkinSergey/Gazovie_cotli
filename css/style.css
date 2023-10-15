@@ -11,6 +11,9 @@
     font-size: 14px;
     font-weight: 500;
 }
+#header__top-2{
+    display: none;
+}
 .header__top-text{
     font-size: 16px;
     font-weight: 700;
@@ -56,6 +59,9 @@
 .header__bottom{
     padding: 20px 0 240px;
 }
+#header__bottom-2{
+    display: none;
+}
 .header__bottom-top{
     display: flex;
     gap: 75px;
@@ -97,11 +103,6 @@
     position: relative;
     background-color: #fff;
 }
-/* .main__overlay{
-    background-color: rgba(59, 67, 76, 0.9);
-    width: 100%;
-    height: 100%;
-} */
 .offer{
     width: 1073px;
     background-image: url(../images/offer__bg.png);
@@ -135,6 +136,9 @@
 .offer__title:first-child{
     width: 461px;
 }
+#button-400{
+    display: none;
+}
 .offer .order__btn{
     background-color: #52575A;
     border: 1px solid #fff;
@@ -163,9 +167,6 @@
 .taimer__text{
     font-size: 10px;
     font-weight: 300;
-}
-.application{
-
 }
 .application__overlay{
     position: fixed;
@@ -256,7 +257,7 @@
 .application-order__btn:active{
     background-color: #404040;
 }
-.show{
+.application__show{
     transform: translateX(-50%);
 }
 .cotli{
@@ -270,6 +271,9 @@
     display: flex;
     align-items: center;
     margin-bottom: 77px;
+}
+#cotli__logo-2{
+    display: none;
 }
 .logo__item{
     border-radius: 20px;
@@ -375,6 +379,9 @@
     text-align: center;
     margin-bottom: 46px;
 }
+#boilery__logo-2{
+    display: none;
+}
 .logo__item--hajdu{
     padding: 109px 30px;
     margin-right: 89px;
@@ -396,16 +403,19 @@
 }
 .consultation{
     max-width: 1073px;;
-    margin: 0 auto;
+    margin: 0 auto 54px;
     padding: 95px 0 163px 88px;
     border-radius: 60px;
     background: url(../images/consultation-bg.png);
-    margin-bottom: 54px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: left;
+    gap: 18px;
 }
 .consultation__title{
     color: #FFF;
     width: 377px;
-    margin-bottom: 18px;
 }
 .consultation .consultation__btn{
     display: inline-flex;
@@ -452,8 +462,14 @@
     width: 100%;
     color: #FFF;
 }
+#equipment__content-2{
+    display: none;
+}
 .footer{
     padding: 38px 0 33px;
+}
+#footer-2{
+    display: none;
 }
 .footer__box{
     display: flex;

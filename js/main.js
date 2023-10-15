@@ -1,15 +1,14 @@
 let time = 1055514;
 
-const daysEl = document.getElementById('days'),
-  hoursEl = document.getElementById('hours'),
-  minutesEl = document.getElementById('minutes'),
-  secondsEl = document.getElementById('seconds'),
+const timerElems = document.querySelectorAll('#taimer'),
   orderBtn = document.querySelectorAll('.order__btn'),
   applicationContent = document.getElementsByClassName('application__content'),
   application = document.querySelector('.application'),
-  closeBtn = document.querySelector('.close__btn');
+  closeBtn = document.querySelectorAll('.close__btn'),
+  headerBtn = document.querySelector('.header__btn'),
+  headerMenu = document.querySelector('.header__menu');
 
-console.log(application)
+
 setInterval(updateCountdown, 1000);
 
 function updateCountdown() {
@@ -33,10 +32,10 @@ function updateCountdown() {
     seconds = seconds < 10 ? '0' + seconds:
     seconds;
 
-    daysEl.innerHTML = `${days}`;
-    hoursEl.innerHTML = `${hours}`;
-    minutesEl.innerHTML = `${minutes}`;
-    secondsEl.innerHTML = `${seconds}`;
+    timerElems[0].innerHTML = `${days}`;
+    timerElems[1].innerHTML = `${hours}`;
+    timerElems[2].innerHTML = `${minutes}`;
+    timerElems[3].innerHTML = `${seconds}`;
 
     time > 0 ? time--: time = 0;
 };
@@ -44,12 +43,54 @@ function updateCountdown() {
 
 orderBtn.forEach((btn) => {
     btn.addEventListener('click', ()=> {
-      applicationContent[0].classList.add('show'),
+      applicationContent[0].classList.add('application__show'),
       application.classList.add('application__overlay');
     });
 });
 
-closeBtn.addEventListener('click', ()=>{
-    applicationContent[0].classList.remove('show'),
+headerBtn.addEventListener('click', ()=> {
+  headerMenu.classList.add('header__menu-show');
+});  
+
+closeBtn.forEach((btn) => {
+  btn.addEventListener('click', ()=>{
+    applicationContent[0].classList.remove('application__show'),
     application.classList.remove('application__overlay');
+    headerMenu.classList.remove('header__menu-show');
+  });
+});
+
+
+const cotliSwiper = new Swiper('.cotli__swiper', {
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 28,
+
+  pagination: {
+    el: '.cotli__pagination',
+    clickable: true,
+  },
+
+  slidesPerView: 1.6,
+});
+
+const boilerySwiper = new Swiper('.boilery__swiper', {
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 28,
+
+  pagination: {
+    el: '.boilery__pagination',
+    clickable: true,
+  },
+
+  slidesPerView: 1.6,
+});
+
+const equipmentSwiper = new Swiper('.equipment__swiper', {
+  direction: 'horizontal',
+  loop: false,
+  spaceBetween: 40,
+
+  slidesPerView: 1.6,
 });

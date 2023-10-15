@@ -7,14 +7,16 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/global.css">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mediaquery.css">
     <title>Газовые котлы</title>
 </head>
 <body>
     <header class="header">
         <div class="container">
-            <div class="header__top">
+            <div class="header__top" id="header__top-1">
                 <p class="header__top-text">Газовые котлы и оборудование</p>
                 <div class="place__box box">
                     <img src="images/place-white.svg" alt="img" class="place__img">
@@ -54,10 +56,80 @@
                     </li>
                 </ul>
             </div>
+            <div class="header__top" id="header__top-2">
+                <button class="header__btn" type="button">
+                    <img src="images/header__btn-img.svg" alt="img" class="header__btn-img">
+                </button>
+                <div class="header__menu">
+                    <div class="header__menu-box">
+                        <button class="close__btn" type='button'>
+                            <img src="images/close-btn.svg" alt="close" class="close__btn-img">
+                        </button>
+                        <h2 class="header__menu-title title">контакты</h2>
+                        <div class="place__box box">
+                            <img src="images/place-white.svg" alt="img" class="place__img">
+                            <p class="place__text">г.Череповец , ул.Любецкая д.38 магазин «Сантехника плюс»</p>
+                        </div>
+                        <div class="time__box box">
+                            <img src="images/time-white.svg" alt="img" class="time__img">
+                            <p class="time__text">пн-пт с 10.00 до 19.00 cб- 11.00-16.00 вс-выходной</p>
+                        </div>
+                        <div class="phone__box box">
+                            <img src="images/phone-white.svg" alt="img" class="phone__img">
+                            <div class="number__box">
+                                <a href="tel:89211459496" class="number__link">8 921-145-94-96</a>
+                                <a href="tel:88202595400" class="number__link">8(8202)595-400</a>
+                                <a href="tel:88202595410" class="number__link">8(8202)595-410</a>
+                            </div>
+                        </div>
+                        <div class="mail__box box">
+                            <img src="images/mail-white.svg" alt="img" class="mail__img">
+                            <a href="mailto:san_plus@mail.ru" class="mail__link">san_plus@mail.ru</a>
+                        </div>
+                        <ul class="menu__list">
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Газовые котлы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Бойлер косвенного нагрева</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Дополнительное оборудование</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Схема работы</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Производители</a>
+                            </li>
+                            <li class="menu__item">
+                                <a href="#" class="menu__link">Контакты</a>
+                            </li>
+                        </ul>
+                    </div>    
+                </div>     
+                <ul class="social__list">
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="images/vk-white.svg" alt="img" class="social__img">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="images/whatsapp-white.svg" alt="img" class="social__img">
+                        </a>
+                    </li>
+                    <li class="social__item">
+                        <a href="#" class="social__link">
+                            <img src="images/viber-white.svg" alt="img" class="social__img">
+                        </a>
+                    </li>
+                </ul>
+            </div>
         </div>
         <div class="devider"></div>
         <div class="container">
-            <div class="header__bottom">
+            <div class="header__bottom" id="header__bottom-1">
                 <div class="header__bottom-top">
                     <ul class="menu__list">
                         <li class="menu__item">
@@ -96,6 +168,25 @@
                     </div>
                 </div>
             </div>
+            <div class="header__bottom" id="header__bottom-2">
+                <div class="phone__box box">
+                    <img src="images/phone-white.svg" alt="img" class="phone__img">
+                    <div class="number__box">
+                        <a href="tel:89211459496" class="number__link">8 921-145-94-96</a>
+                        <a href="tel:88202595400" class="number__link">8(8202)595-400</a>
+                        <a href="tel:88202595410" class="number__link">8(8202)595-410</a>
+                    </div>
+                </div>
+                <h1 class="header__bottom-title">Газовые  котлы и оборудование в Череповце</h1>
+                <button class="order__btn btn">
+                    <img src="images/order__btn-phone.svg" alt="img" class="order__btn-phone">
+                    <a class="order__btn-link">Заказать звонок</a>
+                </button>
+                <div class="catalog__btn btn">
+                    <img src="images/catalog__btn.svg" alt="img" class="catalog__btn-img">
+                    <a href="#" class="catalog__btn-link">Каталог продукции</a>
+                </div>
+            </div>
         </div>
     </header>
     <main class="main">
@@ -103,26 +194,30 @@
             <div class="offer__overlay">
                 <div class="offer__box">
                     <h2 class="offer__title title">Газовые котлы THERMEX в августе со скидкой 10%</h2>
-                    <button class="order__btn btn" type="button">
+                    <button class="order__btn btn" type="button" id="button-1280">
                         <img src="images/order__btn-phone.svg" alt="img" class="order__btn-phone">
                         <a class="order__btn-link">Заказать звонок</a>
+                    </button>
+                    <button class="order__btn--400 btn" type="button" id="button-400">
+                        <img src="images/order__btn-phone.svg" alt="img" class="order__btn-phone">
+                        <a href="#footer-2" class="order__btn-link">Заказать звонок</a>
                     </button>
                     <h2 class="offer__title title">до конца акции осталось</h2>
                     <div class="timer">
                         <div class="timer__item">
-                            <p class="taimer__number" id="days"></p>
+                            <p class="taimer__number" id="taimer"></p>
                             <p class="taimer__text">Дней</p>
                         </div>
                         <div class="timer__item">
-                            <p class="taimer__number" id="hours"></p>
+                            <p class="taimer__number" id="taimer"></p>
                             <p class="taimer__text">Часов</p>
                         </div>
                         <div class="timer__item">
-                            <p class="taimer__number" id="minutes"></p>
+                            <p class="taimer__number" id="taimer"></p>
                             <p class="taimer__text">Минут</p>
                         </div>
                         <div class="timer__item">
-                            <p class="taimer__number" id="seconds"></p>
+                            <p class="taimer__number" id="taimer"></p>
                             <p class="taimer__text">Секунд</p>
                         </div>
                     </div>
@@ -153,7 +248,7 @@
         <section class="cotli">
             <div class="container">
                 <h2 class="cotli__title title">газовые котлы ведущих производителей </h2>
-                <ul class="logo__list">
+                <ul class="logo__list" id='cotli__logo-1'>
                     <li class="logo__item logo__item--thermex">
                         <a href="#" class="logo">
                             <img src="images/Thermex logo.svg" alt="img" class="logo__img">
@@ -175,6 +270,41 @@
                         </a>
                     </li>
                 </ul>
+                <div class="cotli__inner" id='cotli__logo-2'>
+                    <div class="cotli__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logo__item logo__item--thermex">
+                                    <a href="#" class="logo">
+                                        <img src="images/Thermex logo.svg" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">   
+                                <div class="logo__item logo__item--mizudo">
+                                    <a href="#" class="logo">
+                                        <img src="images/mizudo logo.png" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="logo__item logo__item--havein">
+                                    <a href="#" class="logo">
+                                        <img src="images/havein logo.png" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">   
+                                <div class="logo__item logo__item--baxi">
+                                    <a href="#" class="logo">
+                                        <img src="images/Baxi logo.png" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div>   
+                        </div>
+                        <div class="cotli__pagination"></div>
+                    </div>  
+                </div>
                 <div class="products__items">
                     <div class="products__item products__item--thermex">
                         <img src="images/products__item-thermex.png" alt="img" class="products__item-img">
@@ -398,7 +528,7 @@
         <section class="boilery">
             <div class="container">
                 <h2 class="boilery__title title">Бойлеры косвенного нагрева</h2>
-                <ul class="logo__list">
+                <ul class="logo__list" id="boilery__logo-1">
                     <li class="logo__item logo__item--thermex">
                         <a href="#" class="logo">
                             <img src="images/Thermex logo.svg" alt="img" class="logo__img">
@@ -415,6 +545,35 @@
                         </a>
                     </li>
                 </ul>
+                <div class="boilery__inner" id="boilery__logo-2">
+                    <div class="boilery__swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="logo__item logo__item--thermex">
+                                    <a href="#" class="logo">
+                                        <img src="images/Thermex logo.svg" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">   
+                                <div class="logo__item logo__item--hajdu">
+                                    <a href="#" class="logo">
+                                        <img src="images/hajdu logo.png" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div> 
+                            <div class="swiper-slide">
+                                <div class="logo__item logo__item--Royal_Thermo">
+                                    <a href="#" class="logo">
+                                        <img src="images/logo royal thermo.png" alt="img" class="logo__img">
+                                    </a>
+                                </div>
+                            </div>    
+                        </div>
+                        <div class="boilery__pagination"></div>
+                    </div>
+                    <div class="swiper-pagination"></div>    
+                </div>
                 <div class="products__items">
                     <div class="products__item products__item--thermex">
                         <img src="images/products__item-thermex-boiler.png" alt="img" class="products__item-img">
@@ -589,7 +748,7 @@
             </div>
         </section>
         <section class="equipment">
-            <div class="equipment__overlay">
+            <div class="equipment__overlay" id="equipment__content-1">
                 <h2 class="equipment__title title">Газовое оборудование для обвязки частных и жилых многоквартирных домов</h2>
                 <div class="equipment__items">
                     <div class="equipment__item">
@@ -616,9 +775,44 @@
                     </div>
                 </div>
             </div>    
+            <div class="equipment__swiper" id="equipment__content-2">
+                <h2 class="equipment__title title">Газовое оборудование для обвязки частных и жилых многоквартирных домов</h2>
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="equipment__item">
+                            <img src="images/equipment__img-1.png" alt="img" class="equipment__img">
+                            <p class="equipment__text">ГРПШ<br> Газораспределительные шкафы</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment__item">
+                            <img src="images/equipment__img-2.png" alt="img" class="equipment__img">
+                            <p class="equipment__text">Приборы<br>учета газа</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment__item">
+                            <img src="images/equipment__img-3.png" alt="img" class="equipment__img">
+                            <p class="equipment__text">Краны шаровые<br> приварные и резьбовые</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment__item">
+                            <img src="images/equipment__img-4.png" alt="img" class="equipment__img">
+                            <p class="equipment__text">Подводка для газа</p>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="equipment__item">
+                            <img src="images/equipment__img-5.png" alt="img" class="equipment__img">
+                            <p class="equipment__text">САКЗ<br> Система автономного<br> контроля загазованности</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>      
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer-1">
         <div class="container">
             <div class="footer__box">
                 <div class="footer__content">
@@ -672,6 +866,54 @@
             </div>    
         </div>
     </footer>
+    <footer class="footer" id="footer-2">
+        <h2 class="header__menu-title title">контакты</h2>
+        <div class="place__box box">
+            <img src="images/place-white.svg" alt="img" class="place__img">
+            <p class="place__text">г.Череповец , ул.Любецкая д.38 магазин «Сантехника плюс»</p>
+        </div>
+        <div class="time__box box">
+            <img src="images/time-white.svg" alt="img" class="time__img">
+            <p class="time__text">пн-пт с 10.00 до 19.00 cб- 11.00-16.00 вс-выходной</p>
+        </div>
+        <div class="phone__box box">
+            <img src="images/phone-white.svg" alt="img" class="phone__img">
+            <div class="number__box">
+                <a href="tel:89211459496" class="number__link">8 921-145-94-96</a>
+                <a href="tel:88202595400" class="number__link">8(8202)595-400</a>
+                <a href="tel:88202595410" class="number__link">8(8202)595-410</a>
+            </div>
+        </div>
+        <div class="mail__box box">
+            <img src="images/mail-white.svg" alt="img" class="mail__img">
+            <a href="mailto:san_plus@mail.ru" class="mail__link">san_plus@mail.ru</a>
+        </div>
+        <ul class="footer-social__list">
+            <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                    <img src="images/vk-white-black_border.svg" alt="img" class="footer-social__img">
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                    <img src="images/whatsapp-white-black_border.svg" alt="img" class="footer-social__img">
+                </a>
+            </li>
+            <li class="footer-social__item">
+                <a href="#" class="footer-social__link">
+                    <img src="images/viber-white-black_border.svg" alt="img" class="footer-social__img">
+                </a>
+            </li>
+        </ul>
+        <div class="consultation__btn btn">
+            <img src="images/consultation__btn.svg" alt="img" class="consultation__btn-img">
+            <a href="#" class="consultation__btn-link">Консультация</a>
+        </div>
+        <div class="footer__iframe">
+            <iframe src="https://yandex.ru/map-widget/v1/?ll=37.907337%2C59.090906&mode=search&sctx=ZAAAAAgBEAAaKAoSCSarItxkOENAEeZ4BaInu0tAEhIJEvjDz38Ptj8RfZHQlnMpnj8iBgABAgMEBSgKOABAlYIGSAFiKmNvbGxlY3Rpb25zX3JhbmtpbmdfbW9kZWw9Y29sbGVjdGlvbnNfZHNzbWoCcnWdAc3MTD2gAQCoAQC9AWMLgxPCAQWp%2F9GTBOoBAPIBAPgBAIICZdCzLtCn0LXRgNC10L%2FQvtCy0LXRhiAsINGD0Lsu0JvRjtCx0LXRhtC60LDRjyDQtC4zOCDQvNCw0LPQsNC30LjQvSAgwqvQodCw0L3RgtC10YXQvdC40LrQsCDQv9C70Y7RgcK7igIAkgIDOTY4mgIMZGVza3RvcC1tYXBz&sll=37.907337%2C59.090906&sspn=0.043087%2C0.013339&text=%D0%B3.%D0%A7%D0%B5%D1%80%D0%B5%D0%BF%D0%BE%D0%B2%D0%B5%D1%86%20%2C%20%D1%83%D0%BB.%D0%9B%D1%8E%D0%B1%D0%B5%D1%86%D0%BA%D0%B0%D1%8F%20%D0%B4.38%20%D0%BC%D0%B0%D0%B3%D0%B0%D0%B7%D0%B8%D0%BD%20%20%C2%AB%D0%A1%D0%B0%D0%BD%D1%82%D0%B5%D1%85%D0%BD%D0%B8%D0%BA%D0%B0%20%D0%BF%D0%BB%D1%8E%D1%81%C2%BB&z=15" width="400" height="325" frameborder="1" allowfullscreen="true" style="position:relative;"></iframe>
+        </div>  
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>

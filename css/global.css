@@ -77,3 +77,6 @@ a{
     gap: 20px;
     padding: 16px 57px 17px 27px;
 }
+.swiper-wrapper{
+    box-sizing: content-box;
+}
