@@ -1,0 +1,318 @@
+@media (max-width: 414px) {
+    .btn{
+        display: inline-flex;
+        width: 240px;
+    }
+    #header__top-1{
+        display: none;
+    }
+    #header__top-2{
+        display: flex;
+        gap: 101px;
+        padding: 22px 0 44px;
+    }
+    .header__btn{
+        background-color: transparent;
+        border: none;
+        margin-left: 75px;
+    }
+    .header__menu{
+        position: absolute;
+        width: 430px;
+        height: 711px;
+        padding: 13px 0 30px;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        background: #73C1F2;
+        transform: translateY(-100%);
+    }
+    .header__menu-show{
+        transform: translateY(0);
+    }
+    .header__menu-box{
+        max-width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        gap: 23px;
+        text-align: left;
+    }
+    .header__menu-box .close__btn{
+        margin-left: 250px;
+    }
+    .header__menu .menu__list{
+        display: flex;
+        flex-direction: column;
+        gap: 10px;
+        text-align: center;
+        padding-top: 25px;
+        border-top: 2px solid #fff;
+    }
+    .devider{
+        display: none;
+    }
+    #header__bottom-1{
+        display: none;
+    }
+    #header__bottom-2{
+        display: flex;
+        flex-direction: column;
+        padding: 0 0 133px;
+    }
+    .header__bottom .phone__box{
+        flex-direction: column;
+        margin-bottom: 34px;
+        margin: 0 auto 34px;
+    }
+    .header__bottom .phone__img{
+        margin-bottom: 10px;
+        width: 30px;
+        height: 30.044px;
+    }
+    .header__bottom .number__link{
+        font-size: 30px;
+        font-weight: 800;
+        line-height: normal;
+    }
+    .header__bottom-title{
+        font-size: 40px;
+        font-weight: 700;
+        line-height: 50px;
+        margin-bottom: 30px;
+        width: 327px;
+        text-align: center;
+        margin: 0 auto 30px;
+    }
+    .header__bottom .order__btn,
+    .header__bottom .catalog__btn{
+        margin: 0 auto;
+    }
+    .header__bottom .order__btn{
+        margin-bottom: 18px;
+    }
+    .offer{
+        width: 390px;
+    }
+    .offer__overlay{
+        padding: 50px 0 92px;
+    }
+    .offer__box{
+        gap: 34px;
+    }
+    .offer__title:first-child{
+        width: 280px;
+        line-height: 39px;
+    }
+    .offer__title{
+        width: 183px;
+        line-height: 39px;
+    }
+    #button-1280{
+        display: none;
+    }
+    #button-400{
+        display: flex;
+    }
+    .order__btn--400{
+        background-color: #52575A;
+        border: 1px solid #fff;
+        gap: 20px;
+        padding: 16px 57px 17px 27px;
+        border-radius: 25px;
+    }
+    .cotli{
+        padding: 590px 0 40px;
+    }
+    .cotli__title{
+        margin-bottom: 36px;
+    }
+    #cotli__logo-1{
+        display: none;
+    }
+    #cotli__logo-2{
+        display: block;
+    }
+    .cotli__inner{
+        position: relative;
+        margin-bottom: 86px;
+    }
+    .cotli__swiper{
+        overflow: hidden;
+    }
+    .logo__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__item--thermex,
+    .logo__item--mizudo,
+    .logo__item--havein{
+        margin-right: 0px;
+    }
+    .cotli__pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        bottom: -36px;
+    }
+    .cotli__pagination-bullet{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #0487D9;
+    }
+    .products__items{
+        gap: 39px;
+        max-width: 280px;
+        margin: 0 auto;
+    }
+    .products__item{
+        border: none;
+        flex-direction: column;
+    }
+    .products__item-img{
+        width: 280px;
+        height: 309px;
+        object-fit: cover;
+        border-radius: 30px 30px 0px 0px;
+    }
+    .products__item-title{
+        padding: 12px 0 4px;
+    }
+    .productsi__item-text{
+        font-size: 12px;
+        margin: 0 0px 3px 0;
+    }
+    .products__price-text{
+        font-weight: 700;
+    }
+    .products__price{
+        margin-bottom: 16px;
+    }
+    .products__contacts{
+        border-left: none;
+        border-top: 1px solid #606060;
+        padding: 8px 15px 0;
+    }
+    .products__item--Mizudo .productsi__item-text{
+        margin-bottom: 18px;
+    }
+    .products__item--NAVIEN .productsi__item-text{
+        margin-bottom: 31px;
+    }
+    .boilery{
+        margin-bottom: 39px;
+    }
+    .boilery__title{
+        width: 227px;
+        margin: 0 auto 36px;
+    }
+    #boilery__logo-1{
+        display: none;
+    }
+    #boilery__logo-2{
+        display: block;
+    }
+    .boilery__inner{
+        position: relative;
+        margin-bottom: 86px;
+    }
+    .boilery__swiper{
+        overflow: hidden;
+    }
+    .logo__item{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .logo__item--thermex,
+    .logo__item--hajdu,
+    .logo__item--Royal_Thermo{
+        margin-right: 0px;
+    }
+    .boilery__pagination{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 80px;
+        bottom: -36px;
+    }
+    .boilery__pagination-bullet{
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background-color: #0487D9;
+    }
+    .consultation{
+        padding: 71px 0 92px;
+        background-size: cover;
+        border-radius: 0px;
+        background-position: center;
+        gap: 43px;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 39px;
+    }
+    .consultation__title{
+        text-align: center;
+        width: 100%;
+    }
+    .equipment{
+        background-image: none;
+    }
+    #equipment__content-1{
+        display: none;
+    }
+    .equipment__title{
+        color: #606060;
+        width: 100%;
+        margin-bottom: 29px;
+    }
+    #equipment__content-2{
+        display: block;
+    }
+    .equipment__swiper{
+        overflow: hidden;
+    }
+    .equipment__text{
+        color: #606060;
+    }
+    #footer-1{
+        display: none;
+    }
+    #footer-2{
+        max-width: 250px;
+        margin: 0 auto;
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        position: relative;
+    }
+    .header__menu-title{
+        margin-bottom: 21px;
+    }
+    .footer-social__list{
+        justify-content: center;
+        margin-bottom: 23px;
+    }
+    .footer .consultation__btn{
+        margin-bottom: 28px;
+    }
+    .footer__iframe{
+        border-radius: 0px;
+        border: none;
+        position: absolute;
+        left: -77px;
+        bottom: -296px;
+        overflow: visible;
+    }
+}
